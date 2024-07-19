@@ -1,0 +1,22 @@
+@import url(header.css);
+@import url(section.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: 'fontP';
+    src: url(/assets/fonts/Oswald-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'fontP';
+    background-image: url(/assets/img/cyberpunk2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p, h1, h2 {
+    color: white;
+}

@@ -1,0 +1,68 @@
+@import url("header.css");
+@import url(section.css);
+@import url(footer.css);
+@import url(fonts.css);
+@import url(banner.css);
+@import url(lista_cards.css);
+@import url(inputs.css);
+@import url(habilits.css);
+
+body {
+    background-image: url(/assets/img/cyberpunk2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'fontP';
+
+}
+
+#proficao {
+    color: white;
+    font-family: 'fontP';
+}
+
+.h4 {
+    color: white;
+}
+
+@media (max-width: 425px) {
+
+    /*Telas menores do que 425px rodam esse codigo*/
+    #btns_header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        justify-content: center;
+    }
+
+    .btn h4 {
+        display: none;
+    }
+
+    .btn i {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    #logo_imagem {
+        display: flex;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #proficao {
+        font-size: 7vw;
+        text-align: end;
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+}

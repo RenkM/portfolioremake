@@ -1,0 +1,51 @@
+footer{
+    width: 99vw;
+    top: 45vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end; /* direção dos elementos filhos */
+}
+footer button{
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+footer i{
+    font-size: 2vw;
+    color: white;
+    margin: 0.1vw; 
+    transition: all 550ms ease-out;
+}
+
+#btn_discord i:hover{
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+#btn_github i:hover{
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+#btn_linkedin i:hover{
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+#btn_insta i:hover{
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+@media (max-width: 425px){
+    footer{
+        justify-content: center;
+    }
+    footer i{
+        font-size: 10vw;
+        justify-content: center;
+    }
+}

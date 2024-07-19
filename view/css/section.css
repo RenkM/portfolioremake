@@ -1,0 +1,56 @@
+#p_imagem {
+    width: 35vw;
+    height: auto;
+  position: absolute;
+    top: 10vw;
+    left: 15vw;
+    border-radius: 60% 40% 78% 22% / 26% 61% 39% 74% ;
+    z-index: -1;
+}
+
+#nome{
+    font-size: 7vw;
+    position: absolute;
+    top: 10vw;
+    right: 10vw;
+}
+
+#sobrenome{
+    font-size: 7vw;
+  position: absolute;
+    top: 17vw;
+    right: 17vw;
+}
+
+#sobre_mim{
+    font-size: 1.3vw;
+  position: absolute;
+    top: 33vw;
+    right: 2.8vw;
+}
+
+@media (max-width: 425px){
+    #p_imagem{
+        height: 150vw;
+        width: 150vw;
+        left: -20vw;
+        top: 25vw;
+    }
+    #nome{
+        font-size: 20vw;
+        top: 30vw;
+    }
+    #sobrenome{
+        font-size: 16vw;
+        top: 60vw;
+        right: 50vw;
+    }
+    #sobre_mim{
+        width: 90vw;
+        font-size: 5vw;
+        right: 5vw;
+        top: 120vw;
+    }
+    
+}
+    

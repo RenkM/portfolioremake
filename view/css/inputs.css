@@ -1,0 +1,23 @@
+#criar_card{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#criar_card div{
+    width: 40vw;
+    height: 60vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

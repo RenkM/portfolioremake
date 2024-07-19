@@ -1,0 +1,110 @@
+/*Configuração das divisoes do cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1vw;
+}
+
+#btn_home,
+#btn_projetos {
+    font-family: 'fontP';
+}
+
+#btn_home:hover{
+    width: 10vw;
+    transition: all 550ms ease-out;
+}
+
+#btn_projetos:hover{
+    width: 10vw;
+    transition: all 550ms ease-out;
+}
+
+/*Configuração da logo*/
+#logo_imagem {
+    width: 5.5vw;
+    height: 5.5vw;
+    background-color: transparent;
+    border-radius: 50vw;
+    margin: 1.5vw 0.75vw;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5)
+}
+
+/*Configuração dos botões*/
+.btn {
+    width: 12vw;
+    height: 3vw;
+    border: none;
+    border-radius: 20vw;
+    padding: 0;
+    margin: 0 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
+}
+
+.btn h4,
+.btn i {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    color: #ffffff;
+}
+
+#btn_home {
+    background-color: #59beec;
+}
+
+#btn_projetos {
+    background-color: #f465e3;
+}
+
+@media (max-width: 425px) {
+
+    /*Telas menores do que 425px rodam esse codigo*/
+    #btns_header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        justify-content: center;
+    }
+
+    .btn h4 {
+        display: none;
+    }
+
+    .btn i {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    #logo_imagem {
+        display: flex;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #proficao {
+        font-size: 7vw;
+        text-align: end;
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Renk - Projetos</title>
+    <link rel="stylesheet" href="/view/css/projetos.css">
+    <script src="https://kit.fontawesome.com/0608d58633.js" crossorigin="anonymous"></script>
+    <script type="module" src="../../controller/projects/projetos.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo_text">
+            <img id="logo_imagem" src="/assets/img/gatto.png">
+            <h1 id="proficao">
+                Aluno de Programação
+            </h1>
+        </div>
+        <div id="btns_header">
+            <button id="btn_home" class="btn" onclick="window.location.href='index.html'">
+                <h4>HOME</h4>
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button id="btn_projetos" class="btn" onclick="window.location.href='projetos.html'">
+                <h4>PROJETOS</h4>
+                <i class="fa-solid fa-book"></i>
+            </button>
+        </div>
+    </header>
+    <section id="banner_btns">
+        <nav id="banner">
+        </nav>
+        <nav id="btns">
+        </nav>
+    </section>
+    <section id="habilidades">
+        <h1>HABILIDADES</h1>
+        <section id="btns_habilidades">
+            <div id="frameworks">
+                <nav id="frameworks_nav">
+                </nav>
+            </div>
+            <div id="areas">
+                <nav id="areas_nav">
+                </nav>
+            </div>
+            <div id="linguagens">
+                <nav id="linguagens_nav">
+
+                </nav>
+            </div>
+        </section>
+    </section>
+    <section id="cards_projetos">
+    </section>
+    <footer style="z-index: -1;">
+        <button id="btn_github" onclick="window.location.href='https://github.com/RenkM'"><i
+                class="fa-brands fa-github"></i></button>
+        <button id="btn_linkedin" onclick="window.location.href='https://linkedin.com'"><i
+                class="fa-brands fa-linkedin"></i></button>
+        <button id="btn_insta" onclick="window.location.href='https://instagram.com/renkm1'"><i
+                class="fa-brands fa-instagram"></i></button>
+        <button id="btn_discord" onclick="window.location.href='https://discord.com/users/274553743456993281'"><i
+                class="fa-brands fa-discord"></i></button>
+    </footer>
+    <section id="criar_card">
+        <div>
+            <input type="text" id="input_titulo">
+            <input type="text" id="input_descricao">
+            <input type="text" id="input_img">
+            <button id="btn_criar_card" onclick="addCard()">CRIAR</button>
+        </div>
+    </section>
+</body>
+
+</html>

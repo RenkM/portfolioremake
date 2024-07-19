@@ -1,0 +1,49 @@
+#habilidades{
+    width: 90vw;
+    margin: 22vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'fontP';
+}
+#habilidades h1{
+    align-items: center;
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+#btns_habilidades{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+    color: #f5f4f4;
+}
+
+#btns_habilidades div{
+    height: 4vw;
+    width: 17vw;
+    border-radius: 100vw;
+    text-align: center;
+    overflow: hidden;
+}
+#btns_habilidades div nav{
+    position: relative;
+    width: 17vw;
+    height: 16vw;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+#btns_habilidades div nav h4{
+    font-size: 1.4vw;
+    line-height: 4vw;
+    margin: 0;
+}
+#areas{
+    background-color: #26B2DA;
+}
+#linguagens{
+    background-color: #F2BA57;
+}
+#frameworks{
+    background-color: #F14598;
+}
