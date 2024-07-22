@@ -9,7 +9,7 @@
 .card{
     width: 15vw;
     height: 18vw;
-    background-color: white;
+    background-color: #B67DF5;
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
     border-radius: 1.5vw;
     overflow: hidden;
@@ -20,7 +20,7 @@
 .card div{
     height: 25vw;
     width: 15vw;
-    padding: 1vw;
+    padding: 0.2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,25 +29,26 @@
     transition: all 0.2s ease-in-out;
 }
 .card img{
-    height: 6vw;
+    height: 4vw;
     transition: all 0.2s ease-in-out;
 }
 .card h3{
     font-family: 'fontP';
     font-size: 2vw;
     margin: 0;
+    margin-top: -2vw;
 }
 .card p{
     text-align: center;
     font-family: 'fontP';
-    font-size: 0.8vw;
+    font-size: 1.5vw;
 }
 
 .card:hover{
     transform: scale(1.05);
 }
 .card:hover div{
-    height: 16vw;
+    height: 12vw;
 }
 
 .cardAdd{

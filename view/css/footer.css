@@ -1,7 +1,7 @@
 footer{
     width: 99vw;
     top: 45vw;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: row;

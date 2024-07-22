@@ -38,13 +38,14 @@ export class CriadorCards {
             btn.style.height = '2vw';
             btn.textContent = 'Remover';
             btn.addEventListener('click', () => {
-                this.removerCard(projetos[i].titulo);
+                this.removerCard(projetos[i].id);
             });
     
             img.src = projetos[i].img;
-            img.style.width = '5vw';
+            img.style.width = '6vw';
+            img.style.height = '6vw';
     
-            h3.textContent = projetos[i].titulo;
+            h3.textContent = projetos[i].nome;
     
             p.textContent = projetos[i].descricao;
     
@@ -97,7 +98,7 @@ export class CriadorCards {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ card: nome })
+            body: JSON.stringify({ cardId: nome })
         });
         const result = await response.json();
 

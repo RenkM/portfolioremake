@@ -61,11 +61,11 @@ header div {
 }
 
 #btn_home {
-    background-color: #59beec;
+    background-color: #3546D8;
 }
 
 #btn_projetos {
-    background-color: #f465e3;
+    background-color: #B67DF5;
 }
 
 @media (max-width: 425px) {

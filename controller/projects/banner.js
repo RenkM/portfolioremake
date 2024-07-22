@@ -1,10 +1,11 @@
-const totalBanners = 5;
+const totalBanners = 3;
 let bannerAtual = 1;
 let intervaloTrocaBanner;
 
-const titlesBanner = ["TRANSPORTE COMUNITARIO - FB", "ChatMat", "Ementa TDS", "Dust Pizzaria", "JOGO DA FORCA"];
-const textsBanner = ["Feito em HTML/CSS/JS e API do GOOGLE MAPS", "IA Feita em python", "Ementa de ensino para o curso integrado técnico em desenvolvimento de sistemas", "Feito em HTML/CSS", "Feito em JAVA no ANDROID STUDIO"];
-const colorsBanner = ["#F14598", "#26B2DA", "#F2BA57","#F14598", "#26B2DA", "#F2BA57"];
+const titlesBanner = ["TRANSPORTE COMUNITARIO - FB", "Projetos De Desenvolvimento", "Web Design"];
+const textsBanner = ["Feito em HTML/CSS/JS e API do GOOGLE MAPS", "Diversos protótipos de projetos Web/GameDev", "Estilização com HTML e CSS"];
+const colorsBanner = ["#1D1C1F", "#3546D8", "#B67DF5"];
+const textColors = ["#FFFFFF"];
 
 let banner = document.getElementById("banner");
 let btns = document.getElementById("btns");
@@ -18,7 +19,13 @@ export function criarBanners(){
         h2.textContent = titlesBanner[i];
         h6.textContent = textsBanner[i];
 
-        div.style.background = "linear-gradient(149deg, " + colorsBanner[i] + " 65%, rgba(245,244,244,1) 100%)";
+        h2.style.color = textColors[i % textColors.length]; // Use modulo operator to cycle through textColors array
+        h6.style.color = textColors[(i + 1) % textColors.length];
+
+        h2.style.fontSize = "1.8em";
+        h6.style.fontSize = "1.4em";
+
+        div.style.background = "linear-gradient(149deg, " + colorsBanner[i] + " 75%, rgba(245,244,244,1) 100%)";
 
         div.append(h2);
         div.appendChild(h6);

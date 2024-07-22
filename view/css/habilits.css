@@ -12,10 +12,10 @@
     color: #ffffff;
 }
 #btns_habilidades{
-    width: 90vw;
+    width: 50vw;
     display: flex;
     justify-content: space-around;
-    margin: 2vw;
+    margin: 0.5vw;
     color: #f5f4f4;
 }
 
@@ -39,11 +39,8 @@
     margin: 0;
 }
 #areas{
-    background-color: #26B2DA;
+    background-color: #3546D8;
 }
 #linguagens{
-    background-color: #F2BA57;
-}
-#frameworks{
-    background-color: #F14598;
+    background-color: #B67DF5;
 }
