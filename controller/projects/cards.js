@@ -36,14 +36,14 @@ export class CriadorCards {
     
             btn.style.width = '5vw';
             btn.style.height = '2vw';
-            btn.textContent = 'Remover';
+            btn.textContent = 'Apagar';
             btn.addEventListener('click', () => {
                 this.removerCard(projetos[i].id);
             });
     
             img.src = projetos[i].img;
-            img.style.width = '6vw';
-            img.style.height = '6vw';
+            img.style.width = '9vw';
+            img.style.height = '9vw';
     
             h3.textContent = projetos[i].nome;
     

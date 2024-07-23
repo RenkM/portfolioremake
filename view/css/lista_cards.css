@@ -5,10 +5,11 @@
     justify-content: space-around;
     grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
     grid-template-rows: 20vw 20vw 20vw 20vw 20vw;
+    grid-gap: 3vw;
 }
 .card{
     width: 15vw;
-    height: 18vw;
+    height: 22vw;
     background-color: #B67DF5;
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
     border-radius: 1.5vw;
@@ -34,7 +35,7 @@
 }
 .card h3{
     font-family: 'fontP';
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 0;
     margin-top: -2vw;
 }
