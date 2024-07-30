@@ -68,6 +68,15 @@ header div {
     background-color: #B67DF5;
 }
 
+.page2 #btn_home{
+    background-color: #111111;
+}
+
+.page2 #btn_projetos{
+    background-color: #7D7D7D;
+}
+
+
 @media (max-width: 425px) {
 
     /*Telas menores do que 425px rodam esse codigo*/

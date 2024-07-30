@@ -42,8 +42,8 @@ export class CriadorCards {
             });
     
             img.src = projetos[i].img;
-            img.style.width = '9vw';
-            img.style.height = '9vw';
+            img.style.width = '12vw';
+            img.style.height = '12vw';
     
             h3.textContent = projetos[i].nome;
     

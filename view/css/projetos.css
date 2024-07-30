@@ -8,7 +8,8 @@
 @import url(habilits.css);
 
 body {
-    background-image: url(/assets/img/cyberpunk2.png);
+    background-image: url(/assets/img/concert2.jpg);
+    background-size: 1920px 1080px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
