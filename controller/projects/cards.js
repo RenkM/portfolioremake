@@ -1,7 +1,6 @@
 export class CriadorCards {
     constructor() {
         this.cards_projetos = document.getElementById('cards_projetos');
-        this.divs = [];
         this.criar_card = document.getElementById('criar_card');
         this.input_titulo = document.getElementById('input_titulo');
         this.input_descricao = document.getElementById('input_descricao');
@@ -9,6 +8,7 @@ export class CriadorCards {
 
         this.addCard = this.addCard.bind(this);
         this.removerCard = this.removerCard.bind(this);
+
     }
 
     async criarCards() {
@@ -17,54 +17,56 @@ export class CriadorCards {
         const projetos = data.projetos;
 
         this.cards_projetos.innerHTML = '';
-        this.divs = [];
-    
+
         for (let i = 0; i < projetos.length; i++) {
-            var div = document.createElement('div');
-    
-            div.className = 'card';
-            this.divs.push(div);
-            this.cards_projetos.appendChild(div);
-        }
-    
-        for (let i = 0; i < projetos.length; i++) {
-            var div = document.createElement('div');
-            var img = document.createElement('img');
-            var h3 = document.createElement('h3');
-            var p = document.createElement('p');
-            var btn = document.createElement('button');
-    
+            const projeto = projetos[i];
+            
+            // Cria o container do card
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            
+            // Cria e adiciona a imagem ao card
+            const img = document.createElement('img');
+            img.src = `../../assets/img/${projeto.img}`;  // Usando caminho relativo para a pasta assets
+            img.alt = projeto.nome;
+            img.style.width = '12vw';
+            img.style.height = '12vw';
+            cardDiv.appendChild(img);
+            
+            // Cria e adiciona o título ao card
+            const h3 = document.createElement('h3');
+            h3.textContent = projeto.nome;
+            cardDiv.appendChild(h3);
+            
+            // Cria e adiciona a descrição ao card
+            const p = document.createElement('p');
+            p.textContent = projeto.descricao;
+            cardDiv.appendChild(p);
+            
+            // Cria e adiciona o botão de apagar ao card
+            const btn = document.createElement('button');
             btn.style.width = '5vw';
             btn.style.height = '2vw';
             btn.textContent = 'Apagar';
             btn.addEventListener('click', () => {
-                this.removerCard(projetos[i].id);
+                this.removerCard(projeto.id);
             });
-    
-            img.src = projetos[i].img;
-            img.style.width = '12vw';
-            img.style.height = '12vw';
-    
-            h3.textContent = projetos[i].nome;
-    
-            p.textContent = projetos[i].descricao;
-    
-            div.appendChild(img);
-            div.appendChild(h3);
-            div.appendChild(p);
-            div.appendChild(btn);
-            this.divs[i].appendChild(div);
+            cardDiv.appendChild(btn);
+            
+            // Adiciona o card ao container de cards
+            this.cards_projetos.appendChild(cardDiv);
         }
-    
+
+        // Adiciona o card para criar um novo projeto
         let divAdd = document.createElement('div');
         divAdd.className = 'card cardAdd';
         divAdd.addEventListener('click', () => {
             this.criar_card.style.display = 'flex';
         });
-    
+
         let icon = document.createElement('i');
         icon.className = "fa-solid fa-plus iconeMais";
-    
+
         divAdd.appendChild(icon);
         this.cards_projetos.appendChild(divAdd);
     }
@@ -92,13 +94,13 @@ export class CriadorCards {
         }
     }
 
-    async removerCard(nome) {
+    async removerCard(id) {
         const response = await fetch('http://127.0.0.1:3000/deleteCard', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ cardId: nome })
+            body: JSON.stringify({ cardId: id })
         });
         const result = await response.json();
 

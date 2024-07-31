@@ -5,11 +5,15 @@
     justify-content: space-around;
     grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
     grid-template-rows: 20vw 20vw 20vw 20vw 20vw;
-    grid-gap: 3vw;
+    grid-gap: 9vw 2vw;
 }
 .card{
     width: 15vw;
     height: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: #111111;
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
     border-radius: 8% 92% 5% 95% / 95% 3% 97% 5%;
@@ -21,29 +25,32 @@
 .card div{
     height: 25vw;
     width: 15vw;
-    padding: 0.1vw;
+    padding: 0.3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     transition: all 0.2s ease-in-out;
 }
 .card img{
-    height: 4vw;
+    height: auto;
     transition: all 0.2s ease-in-out;
+    max-width: 100%;
+    display: block;
 }
 .card h3{
     font-family: 'fontP';
     font-size: 1.5vw;
     margin: 0;
+    padding: 0;
+    text-align: center;
     margin-top: -2vw;
     color: white;
 }
 .card p{
     text-align: center;
     font-family: 'fontP';
-    font-size: 1.5vw;
+    font-size: 1.0vw;
     color: white;
 }
 

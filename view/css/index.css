@@ -7,14 +7,15 @@
     src: url(/assets/fonts/Oswald-VariableFont_wght.ttf);
 }
 
-body{
-    margin: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    font-family: 'fontP';
+body {
     background-image: url(/assets/img/cyberpunk2.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'fontP';
+
 }
 
 p, h1, h2 {
