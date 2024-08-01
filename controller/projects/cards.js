@@ -12,7 +12,7 @@ export class CriadorCards {
     }
 
     async criarCards() {
-        const response = await fetch('http://backendportfolio-umber.vercel.app/pegaCards');
+        const response = await fetch('http://backendportfolio-fawn.vercel.app//pegaCards');
         const data = await response.json();
         const projetos = data.projetos;
 
@@ -76,7 +76,7 @@ export class CriadorCards {
         const descricao = this.input_descricao.value;
         const img = this.input_img.value;
 
-        const response = await fetch('http://backendportfolio-umber.vercel.app/addCard', {
+        const response = await fetch('http://backendportfolio-fawn.vercel.app//addCard', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -95,7 +95,7 @@ export class CriadorCards {
     }
 
     async removerCard(id) {
-        const response = await fetch('http://backendportfolio-umber.vercel.app/deleteCard', {
+        const response = await fetch('http://backendportfolio-fawn.vercel.app//deleteCard', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
